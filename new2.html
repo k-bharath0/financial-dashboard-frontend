@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        
+    
+        
+        
+        </style>
+</head>
+<body class="bg-light" style="padding: 7px;">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/ul/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<div class="fixed-element  d-lg-none">
+    <!-- Fixed element: stays fixed at the bottom of the viewport -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+        <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-menu-button-wide" viewBox="0 0 16 16">
+        <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v2A1.5 1.5 0 0 1 14.5 5h-13A1.5 1.5 0 0 1 0 3.5zM1.5 1a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5z"/>
+        <path d="M2 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m10.823.323-.396-.396A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0M0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5"/>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" class="bi bi-newspaper" viewBox="0 0 16 16">
+        <path d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5z"/>
+        <path d="M2 3h10v2H2zm0 3h4v3H2zm0 4h4v1H2zm0 2h4v1H2zm5-6h2v1H7zm3 0h2v1h-2zM7 8h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2z"/>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+      </svg>
+      
+  
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+        </svg>
+  </div>
+<div class="d-lg-flex" >
+
+    <div class="p-3 d-lg-block d-none" style="background-color: white;border-bottom-left-radius: 25px;border-top-left-radius: 25px;"> 
+        <div>
+        <img src="./images/logo2.png"/>
+        </div>
+        <div >
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+        </svg>
+        <br/>
+        </div>
+        <div>
+        <p class="pt-5"></p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+          <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+        </svg>
+        <br />
+    </div>
+        <div>
+        <p class="pt-2"></p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-menu-button-wide" viewBox="0 0 16 16">
+          <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v2A1.5 1.5 0 0 1 14.5 5h-13A1.5 1.5 0 0 1 0 3.5zM1.5 1a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5z"/>
+          <path d="M2 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m10.823.323-.396-.396A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0M0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5"/>
+        </svg>
+        <br/>
+    </div>
+        <div>
+        <p class="pt-2"></p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" class="bi bi-newspaper" viewBox="0 0 16 16">
+          <path d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5z"/>
+          <path d="M2 3h10v2H2zm0 3h4v3H2zm0 4h4v1H2zm0 2h4v1H2zm5-6h2v1H7zm3 0h2v1h-2zM7 8h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2z"/>
+        </svg>
+        <br/>
+    </div>
+        <div>
+        <p class="pt-2"></p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+          <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+        </svg>
+        <br/>
+    </div>
+        <div>
+        <p class="pt-2"></p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+          <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"/>
+        </svg>
+        <br/>
+        </div>
+        <div>
+        <p class="pt-2"></p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"/>
+          <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
+        </svg>
+      </div>
+      </div>
+     
+<div class="container-fluid pl-0" >
+<div class="row">
+  
+  <div class="col-lg-3 bg-light" >
+    
+    <div style="padding: 50px 20px;">
+    <div class="container p-0 pb-4">
+      <div class="row">
+    <img class="col-5 logo" src="./images/logo.png"/>
+    <div class="col-7 p-1">
+    <h3 class="ff font-weight-bold fs1">Hi Mike,</h3> 
+    <p>welcome back.</p>
+  </div>
+  </div>
+  </div>
+
+    <div class="mb-5 pl-3">
+    <h5 class="ff">Today</h5>
+    <h3 class="ff fs1 font-weight-bold">$19,892</h3> <p>Account Balance</p>
+    <h5 class=" font-weight-bold">$4,000</h5> <p>Year-to-Date Contributions</p>
+    <h5 class="font-weight-bold">$1,892</h5> <p>Total Interest</p>
+    <button class="btn backColor">I want to</button> 
+  </div>
+  <div>
+    <h6 class="font-weight-bold ff">Recent Transactions</h6>
+    <p>2020-08-07</p>
+    <p class="font-weight-bold">Withdrawal Transfer to Bank-XXX11</p>
+    <hr/>
+    <p>2020-08-21</p>
+    <p class="font-weight-bold">Withdrawal Transfer to Bank-XXX11</p>
+    <hr/>
+    <p>2020-08-16</p>
+    <p class="font-weight-bold">Withdrawal Transfer to Bank-XXX11</p>
+  </div>
+</div>
+</div>
+<div class="col-lg-6 bg-white" style="padding: 50px 30px;">
+<h6 class="color2 ff font-weight-bold">Retirement Income</h6>
+<h4 class="ff font-weight-bold pb-4">Starting Year 2056</h4>
+<div class="row pb-4">
+<div class="col-lg-4 col-12">
+<h4 class="font-weight-bold">$300,000</h4>
+<p>My Goal</p>
+<hr class="backColor"/>
+</div>
+<div class="col-lg-4 col-6">
+<h4 class="font-weight-bold">59%</h4>
+<p>Goal Achieved</p>
+<hr class="backColor"/>
+
+</div>
+<div class="col-lg-4 col-6">
+<h4 class="font-weight-bold">$300</h4>
+<p>Est. Montly Income</p>
+<hr class="backColor"/>
+
+</div>
+</div>
+<h5 class="ff font-weight-bold">Contributions Overtime</h5>
+<!--<span>Employer: K73,500</span>
+<span>Employee: K 52,500</span>
+<span>Total Interest: K244,313</span>-->
+
+<div>
+  <canvas id="contributionsChart" style="width:80%;max-width:600px"></canvas>
+</div>
+
+<h5 class="ff font-weight-bold pt-5">How do I compare to my peers?</h5>
+<p class="pb-3">These numbers represent current goal achievement</p>
+<div class="container p-0">
+  <div class="row">
+  <div class="col-lg-4">
+<p>Age: Under 30▾</p>
+<hr/>
+<p>Salary: K 20 - K 30▾</p>
+<hr/>
+<p>Gender: Male▾</p>
+</div>
+<div class="d-flex col-lg-4">
+<div class="progress-bar-container ">
+  
+  <div class="progress-bar avg pcolor">
+    <progress id="avg" min="0" max="100" value="78"></progress>
+  </div>
+  <p style="text-align: center;">
+    <label for="avg">Average</label>
+  </p>
+</div>
+
+<div class="progress-bar-container ml-2 ">
+  
+  <div class="progress-bar top pcolor">
+    <progress id="top" min="0" max="100" value="95"></progress>
+  </div>
+  <p style="text-align: center;">
+    <label for="top">top</label>
+  </p>
+</div>
+
+<div class="progress-bar-container ml-2">
+
+  <div class="progress-bar me pcolor">
+    <progress id="me" min="0" max="100" value="59"></progress>
+    
+  </div>
+  <p style="text-align: center;">
+    <label for="me">me</label>
+  </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-3 bg-white" style="padding: 50px 40px;border-bottom-right-radius: 25px;border-top-right-radius: 25px;">
+  <div class="bg-light" style="padding: 20px 20px 10px 20px;width: 100%;border-radius: 10px;">
+<h5 class="ff font-weight-bold pb-3">Retirement Strategy</h5>
+<p>Employee Contribution</p>
+<div class="slider-container">
+  
+  <div class="range-wrap">
+    <input type="range" class="range1 range" min="0" max="100" value="52">
+    <span class="range-value1">52</span>
+  </div>
+</div>
+<br/>
+<p>Retirement Age</p>
+<div class="slider-container">
+  
+  <div class="range-wrap">
+    <input type="range" class="range2 range" min="0" max="100" value="65">
+    <span class="range-value2">65</span>
+  </div>
+</div>
+<hr/>
+<p>Employer Contribution 8.4%</p>
+<p>Interest Rate 5%</p>
+<div style="text-align: center;">
+<button class="btn backColor" style="width: 100%;">Update</button>
+
+<p class="color2 pt-4">View Help Docs ></p>
+</div>
+
+</div>
+<div class="pl-4 mt-4" style="border-left: solid rgb(99,0,255);">
+<h5>Are you considering a </h5><h5 class="font-weight-bold"> Housing Advance?</h5>
+    <p>Limited time reduce Interest</p>
+    <p class="color2">Learn More ></p>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+var ctx = document.getElementById('contributionsChart').getContext('2d');
+
+// Define the datasets with the three different color segments
+var dataFirstSegment = [10, 20, 30, 40, 50, 60, 70,80,90,100,110,120,130]; // Data for the first segment
+var dataSecondSegment = [10, 20, 30, 40, 50, 60, 70,80,90,100,110,120,130]; // Data for the second segment
+var dataThirdSegment = [10, 20, 30, 40, 50, 60, 70,80,90,100,110,120,130]; // Data for the third segment
+
+var contributionsChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['20', ' ','25',' ', '30',' ', '35',' ', '40',' ', '60',' ','65'], // X-axis labels
+        datasets: [{
+            label: 'Employer: K73,500',
+            data: dataFirstSegment,
+            backgroundColor: 'rgb(41,0,164)', // Red color
+            // ... other properties
+        }, {
+            label: 'Employee: K 52,500',
+            data: dataSecondSegment,
+            backgroundColor: 'rgb(99,9,253)', // Blue color
+            // ... other properties
+        }, {
+            label: 'Total Interest: K244,313',
+            data: dataThirdSegment,
+            backgroundColor: 'rgb(130,167,252)', // Green color
+            // ... other properties
+        }]
+    },
+    options: {
+        scales: {
+            x: {
+                stacked: true, // Stacks bars on the x-axis
+                grid: {
+                display: false, // This will remove the grid lines along the x-axis
+            }
+            },
+            y: {
+                stacked: true, // Stacks bars on the y-axis
+                beginAtZero: true,
+                ticks: {
+                    // Include a dollar sign in the ticks and maybe some formatting
+                    callback: function(value, index, values) {
+                        return '$' + value;
+                    }
+                }
+                
+            }
+        },
+        responsive: true,
+        maintainAspectRatio: false
+    }
+});
+
+const range1 = document.querySelector('.range1');
+const range2 = document.querySelector('.range2');
+  const rangeValue1 = document.querySelector('.range-value1');
+  const rangeValue2 = document.querySelector('.range-value2');
+  range1.oninput = () => {
+    rangeValue1.innerText = range1.value + '%';
+  };
+  range2.oninput = () => {
+    rangeValue2.innerText = range2.value + '%';
+  };
+    </script>
+    
+</body>
+</html>
